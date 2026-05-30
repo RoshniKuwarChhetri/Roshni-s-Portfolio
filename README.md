@@ -25,11 +25,7 @@ Place your assets in the `public/` folder:
 | `public/images/project2.jpg` | Project 2 screenshot |
 | `public/my-resume.pdf` | Your resume PDF |
 
-## ✏️ Customizing Your Info
-
-Open `src/Portfolio.jsx` and edit the constants at the **very top** of the file.
-Every field has a 👉 comment telling you what to change.
-
+#
 ## 🎨 Accent Color
 
 The accent color is `#7c3aed` (purple). To change it, update the `ACCENT` constant.
