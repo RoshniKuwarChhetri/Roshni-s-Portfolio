@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 
-/* ================================================================
-   👉 PERSONAL INFO — Edit everything in this section
-   ================================================================ */
 
 const MY_NAME = "Roshni Kuwar Chhetri";
 const MY_ROLE = "Java Full Stack Developer";
@@ -83,9 +80,6 @@ const SOCIALS = [
   },
 ];
 
-/* ================================================================
-   END OF PERSONAL INFO
-   ================================================================ */
 
 const ACCENT  = "#7c3aed";
 const ACCENT2 = "#a855f7";
