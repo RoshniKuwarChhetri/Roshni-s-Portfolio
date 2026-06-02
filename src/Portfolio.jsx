@@ -30,7 +30,7 @@ const EDUCATION = [
     desc: "Computer Application",
   },
   {
-    year: "Oct 2022 – 2023",
+    year: "2022 – 2023",
     degree: "Senior Secondary",
     school: "C.R Model Public School",
     desc: "HBSE",
