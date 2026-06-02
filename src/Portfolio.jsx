@@ -41,7 +41,7 @@ const PROJECTS = [
   {
     title: "FitNova",
     desc: "Developed a fitness management backend using Java and Spring Boot, featuring RESTful APIs for workout and fitness data management. Integrated the Gemini API to provide AI-powered fitness recommendations and insights, with all endpoints tested using Postman.",
-    tech: ["Java", "Spring Boot", "PostgreSQL", "React.js", "REST API"],
+    tech: ["Java", "Spring Boot", "PostgreSQL", "Spring Security", "REST API"],
     img: "/images/FitNova.png",
     repo: "https://github.com/RoshniKuwarChhetri/FitNova",
     highlights: ["REST API", "JWT Auth", "CRUD"],
