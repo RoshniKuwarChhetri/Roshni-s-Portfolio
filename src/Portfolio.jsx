@@ -495,7 +495,7 @@ export default function Portfolio() {
               ))}
             </div>
 
-            
+
           )}
 
           {activeTab === "experience" && (
@@ -680,4 +680,5 @@ export default function Portfolio() {
       </footer>
     </div>
   );
+
 }
