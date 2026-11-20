@@ -1,24 +1,24 @@
-
 import { useState, useEffect } from "react";
 
+
 const MY_NAME = "Roshni Kuwar Chhetri";
-const MY_ROLE = "Java Full Stack Developer | QA Engineer";
-const MY_LOCATION = "Gurugram, Haryana, India";
+const MY_ROLE = "Java Full Stack Developer";
+const MY_LOCATION = "Gurugram";
 const MY_BIO =
-  "Entry-level Java Full Stack Developer and QA Engineer. I build Spring Boot REST APIs and React frontends, then test them end to end with manual testing, Postman, Selenium and SQL.";
+  "I build robust Java backends and clean React frontends. Currently training at QSpiders, I'm passionate about writing maintainable code and shipping end-to-end solutions.";
 const MY_PHOTO = "/images/formalphoto.png";
 const MY_RESUME = "/Roshni Kuwar Chhetri Resume.pdf";
 
-const ABOUT_DESC_1 = "I completed my Bachelor of Computer Applications (BCA) at Gurugram University (2023 – 2026), after completing Senior Secondary under the HBSE Board. My studies and projects have strengthened my interest in software development, problem-solving and software quality.";
+const ABOUT_DESC_1 = "From completing my Senior Secondary education under the HBSE Board to pursuing a Bachelor of Computer Applications (BCA), my educational journey has been driven by a passion for technology, problem-solving, and continuous learning in software development.";
 const ABOUT_DESC_2 =
-  "I am currently doing Java Full Stack and Software Testing training at QSpiders. I built FitNova end to end, from the Spring Boot API to the React frontend, and tested it with manual test cases, Postman, Selenium and SQL. I am looking for an entry-level Software Developer, Software Test Engineer or QA Engineer role.";
+  "Currently persuing my Java Full Stack internship at QSpiders. I write clean, maintainable code and constantly push myself to learn new tools and best practices.";
 
 const EXPERIENCE = [
   {
-    year: "Jul 2026 – Present",
-    role: "Java Full Stack Development & Software Testing Training",
-    company: "QSpiders, Gurugram",
-    desc: "Training in Core Java, JDBC, Hibernate, Spring Boot, REST APIs, SQL, SDLC, STLC, manual testing, Selenium WebDriver with Java and Agile Scrum.",
+    year: "Oct 2025 – Present",
+    role: "Java Full Stack Training & Internship",
+    company: "QSpiders",
+    desc: "Hands-on training covering Core Java, JDBC, Hibernate, Spring, Spring Boot, REST APIs, SQL, HTML, CSS, JavaScript, and React.js.",
   },
 ];
 
@@ -27,7 +27,7 @@ const EDUCATION = [
     year: "2023 – 2026",
     degree: "BCA",
     school: "Gurugram University",
-    desc: "Relevant coursework: Software Engineering, Database Management Systems, Web Technologies, Object-Oriented Programming",
+    desc: "Computer Application",
   },
   {
     year: "2022 – 2023",
@@ -39,28 +39,25 @@ const EDUCATION = [
 
 const PROJECTS = [
   {
-    title: "FitNova – AI-Powered Fitness Tracker",
-    desc: "Full stack fitness tracker. Built a Spring Boot REST API (15+ endpoints) with JWT authentication, PostgreSQL persistence through Hibernate and Spring Data JPA, Swagger documentation and Gemini AI recommendations, plus a React frontend with protected routes and a chart dashboard. Tested with about 60 manual test cases, 14 logged defects, Selenium scenarios, Postman and SQL checks.",
-    tech: ["Java", "Spring Boot", "Hibernate", "PostgreSQL", "JWT", "Gemini AI", "React.js", "Postman", "Selenium"],
+    title: "FitNova",
+    desc: "Developed a fitness management backend using Java and Spring Boot, featuring RESTful APIs for workout and fitness data management. Integrated the Gemini API to provide AI-powered fitness recommendations and insights, with all endpoints tested using Postman.",
+    tech: ["Java", "Spring Boot", "PostgreSQL", "Spring Security", "REST API"],
     img: "/images/FitNova.png",
-    links: [
-      { label: "Backend on GitHub", href: "https://github.com/RoshniKuwarChhetri/FitNova" },
-      { label: "Frontend on GitHub", href: "https://github.com/RoshniKuwarChhetri/FitNova-Frontend" },
-    ],
-    highlights: ["REST API", "JWT Auth", "QA Tested"],
+    repo: "https://github.com/RoshniKuwarChhetri/FitNova",
+    highlights: ["REST API", "JWT Auth", "CRUD"],
   },
   {
-    title: "AbleSpace – Independent QA Assignment",
-    desc: "Tested onboarding, navigation, forms and core workflows of a staging caseload-management app on desktop Chrome, desktop Edge and Android Chrome in portrait and landscape. Verified required-field validation and reported 1 responsive UI defect where buttons were clipped in portrait and partly cut off in landscape.",
-    tech: ["Manual Testing", "Responsive Testing", "Cross-Browser", "Bug Reporting"],
-    links: [],
-    highlights: ["Web", "Mobile", "Defect Report"],
+    title: "ReactCart",
+    desc: "ReactCart is a responsive e-commerce web application developed using React.js that allows users to browse products, add items to cart, manage quantities, and experience a smooth shopping interface with reusable components and modern UI design.",
+    tech: ["React.js", "JavaScript", "HTML5", "CSS3"],
+    img: "/images/ReactCart.png",
+    repo: "https://github.com/RoshniKuwarChhetri/ReactCart",
+    highlights: ["Responsive", "Modern", "Interactive", "Component-based"],
   },
 ];
 
 const CONTACT_EMAIL = "roshnikc12212@gmail.com";
 const CONTACT_PHONE = "+91 9990706643";
-const GMAIL_COMPOSE = `https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}`;
 
 const SOCIALS = [
   {
@@ -83,124 +80,46 @@ const SOCIALS = [
   },
 ];
 
-const ACCENT = "#7c3aed";
+
+const ACCENT  = "#7c3aed";
 const ACCENT2 = "#a855f7";
 const NAV_ITEMS = ["Home", "About", "Projects", "Contact"];
 
 const SKILLS = [
-  {
-    label: "Core Java",
-    bg: "#f8982015",
-    border: "#f8982040",
-    color: "#f89820",
-    svg: <svg viewBox="0 0 128 128" width="36" height="36"><path fill="#f89820" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zM44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/><path fill="#f89820" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 0-42.731 10.67-22.324 34.187z"/><path fill="#f89820" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zM90.609 93.041c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0 .001.359-.327.468-.617z"/><path fill="#f89820" d="M76.491 1s12.541 12.541-11.897 31.809c-19.688 15.555-4.485 24.411-.006 34.556-11.498-10.38-19.93-19.48-14.271-27.984C58.88 28.401 81.722 22.195 76.491 1z"/><path fill="#f89820" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 0 2.875 2.381 17.647 3.331z"/></svg>,
-  },
-  {
-    label: "JDBC",
-    bg: "#5b9bd515",
-    border: "#5b9bd540",
-    color: "#5b9bd5",
-    svg: <svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="4" fill="#1a2a3a"/><ellipse cx="12" cy="7" rx="8" ry="3" fill="#5b9bd5"/><path d="M4 7v4c0 1.657 3.582 3 8 3s8-1.343 8-3V7" fill="#5b9bd5" opacity=".7"/><path d="M4 11v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4" fill="#5b9bd5" opacity=".4"/></svg>,
-  },
-  {
-    label: "Hibernate",
-    bg: "#8bc3b815",
-    border: "#8bc3b840",
-    color: "#8bc3b8",
-    svg: <svg viewBox="0 0 128 128" width="36" height="36"><rect width="128" height="128" rx="16" fill="#1a2329"/><path fill="#8bc3b8" d="M64 20L20 44v40l44 24 44-24V44L64 20zm0 10l34 18.5V80L64 98.5 30 80V48.5L64 30z"/><path fill="#8bc3b8" opacity=".6" d="M64 30v68.5L30 80V48.5L64 30z"/></svg>,
-  },
-  {
-    label: "Spring",
-    bg: "#6db33f15",
-    border: "#6db33f40",
-    color: "#6db33f",
-    svg: <svg viewBox="0 0 24 24" fill="#6db33f" width="36" height="36"><path d="M21.8537 1.4158a10.4504 10.4504 0 01-1.284 2.2471A11.9666 11.9666 0 1019.8128 1zm-5.4967 15.423c-.1622.2812-.544.3906-.8252.2284a8.8765 8.8765 0 01-.4517-.3155c-1.26.8494-2.842 1.0408-4.716.5845a3.8288 3.8288 0 01-.41 1.044c-.2284.3906-.7344.5057-1.1017.277s-.5057-.7344-.277-1.1017a2.9944 2.9944 0 00.3906-.8687 3.8288 3.8288 0 01-.3906-.4101c-.277-.3906-.1622-.9453.2284-1.1738s.9453-.1622 1.1738.2284c.0811.1249.1778.2339.2906.3272a5.7954 5.7954 0 001.626-1.6977 6.9812 6.9812 0 01-.8848-1.5663c-.277-.7344-.1622-1.5175.3271-1.7773a.8288.8288 0 011.1252.3272 5.236 5.236 0 00.5687 1.2163 10.2766 10.2766 0 00.5687-2.9088c0-.5218.4102-.9453.9453-.9453s.9453.4235.9453.9453c0 1.4443-.3428 2.872-.9765 4.1651a6.2983 6.2983 0 001.044 1.0407c.2812.1622.3906.544.2284.8252z"/></svg>,
-  },
-  {
-    label: "Spring Boot",
-    bg: "#6db33f15",
-    border: "#6db33f40",
-    color: "#6db33f",
-    svg: <svg viewBox="0 0 24 24" fill="#6db33f" width="36" height="36"><path d="M20.205 16.392c-2.469 3.289-7.741 2.179-11.122 2.338 0 0-.599.034-1.201.133 0 0 .228-.097.519-.198 2.374-.821 3.496-.986 4.939-1.727 2.71-1.388 5.408-4.413 5.957-7.555-1.032 3.022-4.17 5.623-7.027 6.679-1.955.722-5.492 1.424-5.493 1.424a5.28 5.28 0 01-.143-.076c-2.405-1.17-2.475-6.38 1.894-8.059 1.916-.736 3.747-.332 5.818-.825 2.208-.525 4.766-2.18 5.805-4.344 1.165 3.458 2.565 8.866.054 12.21zm.042-13.28a9.212 9.212 0 01-1.065 1.89 9.982 9.982 0 00-7.167-3.031C6.492 1.971 2 6.463 2 11.985a9.984 9.984 0 002.936 7.079 1.096 1.096 0 00.051.259c.263.98-.917 1.889-.917 1.889s4.88.696 9.431-1.565c7.568-3.749 8.704-12.023 6.746-16.535z"/></svg>,
-  },
-  {
-    label: "SQL",
-    bg: "#00758f15",
-    border: "#00758f40",
-    color: "#00a8cc",
-    svg: <svg viewBox="0 0 24 24" width="36" height="36"><rect width="24" height="24" rx="4" fill="#00000040"/><path fill="#00758f" d="M12 3C7 3 3 4.343 3 6v12c0 1.657 4 3 9 3s9-1.343 9-3V6c0-1.657-4-3-9-3zm0 2c4.418 0 7 1.119 7 1.5S16.418 8 12 8 5 6.881 5 6.5 7.582 5 12 5z"/><ellipse cx="12" cy="6.5" rx="7" ry="1.5" fill="#00758f"/><path d="M19 10.5c0 .828-3.134 1.5-7 1.5s-7-.672-7-1.5" stroke="#00758f" strokeWidth="1.5" fill="none"/><path d="M19 14c0 .828-3.134 1.5-7 1.5S5 14.828 5 14" stroke="#00758f" strokeWidth="1.5" fill="none"/></svg>,
-  },
-  {
-    label: "HTML5",
-    bg: "#e34f2615",
-    border: "#e34f2640",
-    color: "#e34f26",
-    svg: <svg viewBox="0 0 24 24" fill="#e34f26" width="36" height="36"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>,
-  },
-  {
-    label: "CSS3",
-    bg: "#1572b615",
-    border: "#1572b640",
-    color: "#1572b6",
-    svg: <svg viewBox="0 0 24 24" fill="#1572b6" width="36" height="36"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414v-.001z"/></svg>,
-  },
-  {
-    label: "JavaScript",
-    bg: "#f7df1e15",
-    border: "#f7df1e40",
-    color: "#f7df1e",
-    svg: <svg viewBox="0 0 24 24" fill="#f7df1e" width="36" height="36"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>,
-  },
-  {
-    label: "React.js",
-    bg: "#61dafb15",
-    border: "#61dafb40",
-    color: "#61dafb",
-    svg: <svg viewBox="0 0 24 24" fill="#61dafb" width="36" height="36"><path d="M14.23 12.004a2.236 2.236 0 01-2.235 2.236 2.236 2.236 0 01-2.236-2.236 2.236 2.236 0 012.235-2.236 2.236 2.236 0 012.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.793 1.683-3.264.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09c.735 0 1.364 1.235 1.674 3.188-.615-.189-1.267-.371-1.954-.518A24.73 24.73 0 0015.6 3.27c.587-.204 1.115-.305 1.564-.305l-.016.124zm-5.51.027c.654.157 1.321.38 2.013.627A24.494 24.494 0 0012 5.098a24.56 24.56 0 00-1.367-1.643c.455-.154.91-.254 1.37-.322l.31-.012zm-4.638-.116c.14-.062.29-.092.44-.092.444 0 .975.1 1.56.3a24.725 24.725 0 00-1.003 1.794 24.7 24.7 0 00-1.972.52c.305-1.956.935-3.19 1.674-3.19l-.7-.332zM5.96 8.44c-.304.604-.587 1.232-.844 1.884a24.573 24.573 0 01-1.507-.705c.397-.43.83-.844 1.294-1.233.339.017.688.036 1.057.054zm-.63 3.33c-.166-.48-.3-.96-.41-1.44.498.21 1.016.407 1.543.589a25.175 25.175 0 00-.557 1.494c-.197-.21-.387-.424-.576-.643zm.498 1.614l.593.672a26.002 26.002 0 00-.396 1.507c-.506-.216-1.01-.443-1.504-.68.393-.506.82-1.003 1.307-1.499zm1.68 1.87c-.26-.28-.516-.57-.766-.868a25.38 25.38 0 001.418-.498 25.64 25.64 0 00.517 1.488c-.388-.04-.775-.082-1.169-.122zm3.28.555c.508.028 1.018.044 1.53.044.512 0 1.022-.016 1.53-.044a25.065 25.065 0 01-1.53 1.827 25.065 25.065 0 01-1.53-1.827zm4.23-.5c-.386.04-.767.082-1.15.12.17-.494.328-.99.497-1.489.468.169.937.338 1.43.502-.25.3-.507.59-.777.867zm1.68-1.87c.487.497.91.994 1.307 1.499-.493.237-.997.464-1.503.68a26.004 26.004 0 00-.396-1.507l.593-.672zm.467-1.56c-.197.219-.387.432-.576.643a24.978 24.978 0 00-.557-1.494c.527-.182 1.045-.38 1.543-.59-.11.48-.244.961-.41 1.44zm-.9-3.375c.461.39.895.804 1.294 1.233-.485.231-.977.454-1.508.705a24.454 24.454 0 00-.844-1.884c.36-.018.712-.037 1.058-.054zm-1.54-.64a24.56 24.56 0 01-1.366 1.643 24.494 24.494 0 00-1.367-1.643c.463.069.942.17 1.416.34.47-.166.944-.266 1.417-.34h-.1zM12 7.152c.4.475.8.97 1.184 1.488H10.82c.38-.517.781-1.014 1.18-1.488zm0 9.703c-.4-.475-.8-.97-1.183-1.487h2.364C12.8 15.884 12.4 16.38 12 16.855zm-3.278-1.48c.4.028.8.044 1.203.044.4 0 .8-.016 1.202-.044-.4-.494-.795-.99-1.202-1.487-.406.497-.8.993-1.203 1.487zm6.554 0c-.4-.494-.795-.99-1.201-1.487.401.028.8.044 1.201.044.401 0 .8-.016 1.201-.044-.4.494-.795.99-1.201 1.487z"/></svg>,
-  },
-  {
-    label: "Selenium",
-    bg: "#43b02a15",
-    border: "#43b02a40",
-    color: "#43b02a",
-    svg: <svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="4" fill="#0f1a0d"/><circle cx="12" cy="12" r="8" stroke="#43b02a" strokeWidth="2"/><path d="M8 12.5l3 3 5-6" stroke="#43b02a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-  },
-  {
-    label: "Postman",
-    bg: "#ff6c3715",
-    border: "#ff6c3740",
-    color: "#ff6c37",
-    svg: <svg viewBox="0 0 24 24" width="36" height="36" fill="none"><circle cx="12" cy="12" r="10" fill="#ff6c37"/><path d="M7 17l6-6m0 0h-4m4 0v4M14 8.5l2.5-2.5" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-  },
-  {
-    label: "Manual Testing",
-    bg: "#38bdf815",
-    border: "#38bdf840",
-    color: "#38bdf8",
-    svg: <svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect x="5" y="4" width="14" height="17" rx="2" stroke="#38bdf8" strokeWidth="1.8"/><rect x="9" y="2.5" width="6" height="3.5" rx="1" fill="#38bdf8"/><path d="M8.5 12.5l2 2 4-4.5M8.5 17.5h7" stroke="#38bdf8" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-  },
-  {
-    label: "Git & GitHub",
-    bg: "#f0503215",
-    border: "#f0503240",
-    color: "#f05032",
-    svg: <svg viewBox="0 0 24 24" width="36" height="36" fill="none"><circle cx="7" cy="5.5" r="2.2" fill="#f05032"/><circle cx="7" cy="18.5" r="2.2" fill="#f05032"/><circle cx="17" cy="10" r="2.2" fill="#f05032"/><path d="M7 8v8M7 13c0-3 10-1 10-3" stroke="#f05032" strokeWidth="1.8" strokeLinecap="round"/></svg>,
-  },
+  { label: "Java 8",      bg: "#f8982015", border: "#f8982040", color: "#f89820",
+    svg: <svg viewBox="0 0 128 128" width="36" height="36"><path fill="#f89820" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zM44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/><path fill="#f89820" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 0-42.731 10.67-22.324 34.187z"/><path fill="#f89820" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zM90.609 93.041c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0 .001.359-.327.468-.617z"/><path fill="#f89820" d="M76.491 1s12.541 12.541-11.897 31.809c-19.688 15.555-4.485 24.411-.006 34.556-11.498-10.38-19.93-19.48-14.271-27.984C58.88 28.401 81.722 22.195 76.491 1z"/><path fill="#f89820" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 0 2.875 2.381 17.647 3.331z"/></svg> },
+  { label: "JDBC",        bg: "#5b9bd515", border: "#5b9bd540", color: "#5b9bd5",
+    svg: <svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="4" fill="#1a2a3a"/><ellipse cx="12" cy="7" rx="8" ry="3" fill="#5b9bd5"/><path d="M4 7v4c0 1.657 3.582 3 8 3s8-1.343 8-3V7" fill="#5b9bd5" opacity=".7"/><path d="M4 11v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4" fill="#5b9bd5" opacity=".4"/></svg> },
+  { label: "Hibernate",   bg: "#8bc3b815", border: "#8bc3b840", color: "#8bc3b8",
+    svg: <svg viewBox="0 0 128 128" width="36" height="36"><rect width="128" height="128" rx="16" fill="#1a2329"/><path fill="#8bc3b8" d="M64 20L20 44v40l44 24 44-24V44L64 20zm0 10l34 18.5V80L64 98.5 30 80V48.5L64 30z"/><path fill="#8bc3b8" opacity=".6" d="M64 30v68.5L30 80V48.5L64 30z"/></svg> },
+  { label: "Spring",      bg: "#6db33f15", border: "#6db33f40", color: "#6db33f",
+    svg: <svg viewBox="0 0 24 24" fill="#6db33f" width="36" height="36"><path d="M21.8537 1.4158a10.4504 10.4504 0 01-1.284 2.2471A11.9666 11.9666 0 1019.8128 1zm-5.4967 15.423c-.1622.2812-.544.3906-.8252.2284a8.8765 8.8765 0 01-.4517-.3155c-1.26.8494-2.842 1.0408-4.716.5845a3.8288 3.8288 0 01-.41 1.044c-.2284.3906-.7344.5057-1.1017.277s-.5057-.7344-.277-1.1017a2.9944 2.9944 0 00.3906-.8687 3.8288 3.8288 0 01-.3906-.4101c-.277-.3906-.1622-.9453.2284-1.1738s.9453-.1622 1.1738.2284c.0811.1249.1778.2339.2906.3272a5.7954 5.7954 0 001.626-1.6977 6.9812 6.9812 0 01-.8848-1.5663c-.277-.7344-.1622-1.5175.3271-1.7773a.8288.8288 0 011.1252.3272 5.236 5.236 0 00.5687 1.2163 10.2766 10.2766 0 00.5687-2.9088c0-.5218.4102-.9453.9453-.9453s.9453.4235.9453.9453c0 1.4443-.3428 2.872-.9765 4.1651a6.2983 6.2983 0 001.044 1.0407c.2812.1622.3906.544.2284.8252z"/></svg> },
+  { label: "Spring Boot", bg: "#6db33f15", border: "#6db33f40", color: "#6db33f",
+    svg: <svg viewBox="0 0 24 24" fill="#6db33f" width="36" height="36"><path d="M20.205 16.392c-2.469 3.289-7.741 2.179-11.122 2.338 0 0-.599.034-1.201.133 0 0 .228-.097.519-.198 2.374-.821 3.496-.986 4.939-1.727 2.71-1.388 5.408-4.413 5.957-7.555-1.032 3.022-4.17 5.623-7.027 6.679-1.955.722-5.492 1.424-5.493 1.424a5.28 5.28 0 01-.143-.076c-2.405-1.17-2.475-6.38 1.894-8.059 1.916-.736 3.747-.332 5.818-.825 2.208-.525 4.766-2.18 5.805-4.344 1.165 3.458 2.565 8.866.054 12.21zm.042-13.28a9.212 9.212 0 01-1.065 1.89 9.982 9.982 0 00-7.167-3.031C6.492 1.971 2 6.463 2 11.985a9.984 9.984 0 002.936 7.079 1.096 1.096 0 00.051.259c.263.98-.917 1.889-.917 1.889s4.88.696 9.431-1.565c7.568-3.749 8.704-12.023 6.746-16.535z"/></svg> },
+  { label: "SQL",         bg: "#00758f15", border: "#00758f40", color: "#00a8cc",
+    svg: <svg viewBox="0 0 24 24" width="36" height="36"><rect width="24" height="24" rx="4" fill="#00000040"/><path fill="#00758f" d="M12 3C7 3 3 4.343 3 6v12c0 1.657 4 3 9 3s9-1.343 9-3V6c0-1.657-4-3-9-3zm0 2c4.418 0 7 1.119 7 1.5S16.418 8 12 8 5 6.881 5 6.5 7.582 5 12 5z"/><ellipse cx="12" cy="6.5" rx="7" ry="1.5" fill="#00758f"/><path d="M19 10.5c0 .828-3.134 1.5-7 1.5s-7-.672-7-1.5" stroke="#00758f" strokeWidth="1.5" fill="none"/><path d="M19 14c0 .828-3.134 1.5-7 1.5S5 14.828 5 14" stroke="#00758f" strokeWidth="1.5" fill="none"/></svg> },
+  { label: "HTML5",       bg: "#e34f2615", border: "#e34f2640", color: "#e34f26",
+    svg: <svg viewBox="0 0 24 24" fill="#e34f26" width="36" height="36"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg> },
+  { label: "CSS3",        bg: "#1572b615", border: "#1572b640", color: "#1572b6",
+    svg: <svg viewBox="0 0 24 24" fill="#1572b6" width="36" height="36"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414v-.001z"/></svg> },
+  { label: "JavaScript",  bg: "#f7df1e15", border: "#f7df1e40", color: "#f7df1e",
+    svg: <svg viewBox="0 0 24 24" fill="#f7df1e" width="36" height="36"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg> },
+  { label: "React.js",    bg: "#61dafb15", border: "#61dafb40", color: "#61dafb",
+    svg: <svg viewBox="0 0 24 24" fill="#61dafb" width="36" height="36"><path d="M14.23 12.004a2.236 2.236 0 01-2.235 2.236 2.236 2.236 0 01-2.236-2.236 2.236 2.236 0 012.235-2.236 2.236 2.236 0 012.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.793 1.683-3.264.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09c.735 0 1.364 1.235 1.674 3.188-.615-.189-1.267-.371-1.954-.518A24.73 24.73 0 0015.6 3.27c.587-.204 1.115-.305 1.564-.305l-.016.124zm-5.51.027c.654.157 1.321.38 2.013.627A24.494 24.494 0 0012 5.098a24.56 24.56 0 00-1.367-1.643c.455-.154.91-.254 1.37-.322l.31-.012zm-4.638-.116c.14-.062.29-.092.44-.092.444 0 .975.1 1.56.3a24.725 24.725 0 00-1.003 1.794 24.7 24.7 0 00-1.972.52c.305-1.956.935-3.19 1.674-3.19l-.7-.332zM5.96 8.44c-.304.604-.587 1.232-.844 1.884a24.573 24.573 0 01-1.507-.705c.397-.43.83-.844 1.294-1.233.339.017.688.036 1.057.054zm-.63 3.33c-.166-.48-.3-.96-.41-1.44.498.21 1.016.407 1.543.589a25.175 25.175 0 00-.557 1.494c-.197-.21-.387-.424-.576-.643zm.498 1.614l.593.672a26.002 26.002 0 00-.396 1.507c-.506-.216-1.01-.443-1.504-.68.393-.506.82-1.003 1.307-1.499zm1.68 1.87c-.26-.28-.516-.57-.766-.868a25.38 25.38 0 001.418-.498 25.64 25.64 0 00.517 1.488c-.388-.04-.775-.082-1.169-.122zm3.28.555c.508.028 1.018.044 1.53.044.512 0 1.022-.016 1.53-.044a25.065 25.065 0 01-1.53 1.827 25.065 25.065 0 01-1.53-1.827zm4.23-.5c-.386.04-.767.082-1.15.12.17-.494.328-.99.497-1.489.468.169.937.338 1.43.502-.25.3-.507.59-.777.867zm1.68-1.87c.487.497.91.994 1.307 1.499-.493.237-.997.464-1.503.68a26.004 26.004 0 00-.396-1.507l.593-.672zm.467-1.56c-.197.219-.387.432-.576.643a24.978 24.978 0 00-.557-1.494c.527-.182 1.045-.38 1.543-.59-.11.48-.244.961-.41 1.44zm-.9-3.375c.461.39.895.804 1.294 1.233-.485.231-.977.454-1.508.705a24.454 24.454 0 00-.844-1.884c.36-.018.712-.037 1.058-.054zm-1.54-.64a24.56 24.56 0 00-1.366 1.643 24.494 24.494 0 00-1.367-1.643c.463.069.942.17 1.416.34.47-.166.944-.266 1.417-.34h-.1zM12 7.152c.4.475.8.97 1.184 1.488H10.82c.38-.517.781-1.014 1.18-1.488zm0 9.703c-.4-.475-.8-.97-1.183-1.487h2.364C12.8 15.884 12.4 16.38 12 16.855zm-3.278-1.48c.4.028.8.044 1.203.044.4 0 .8-.016 1.202-.044-.4-.494-.795-.99-1.202-1.487-.406.497-.8.993-1.203 1.487zm6.554 0c-.4-.494-.795-.99-1.201-1.487.401.028.8.044 1.201.044.401 0 .8-.016 1.201-.044-.4.494-.795.99-1.201 1.487z"/></svg> },
 ];
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("skills");
+  const [menuOpen, setMenuOpen]           = useState(false);
+  const [activeTab, setActiveTab]         = useState("skills");
 
   useEffect(() => {
     const handler = () => {
       const scrollY = window.scrollY + 100;
       NAV_ITEMS.forEach((item) => {
         const el = document.getElementById(item.toLowerCase());
-        if (el && scrollY >= el.offsetTop && scrollY < el.offsetTop + el.offsetHeight) {
+        if (el && scrollY >= el.offsetTop && scrollY < el.offsetTop + el.offsetHeight)
           setActiveSection(item.toLowerCase());
-        }
       });
     };
     window.addEventListener("scroll", handler, { passive: true });
@@ -431,9 +350,9 @@ export default function Portfolio() {
 
             <div style={{ display: "flex", gap: 32, marginTop: 48, paddingTop: 32, borderTop: "1px solid #1a1a2e", flexWrap: "wrap" }}>
               {[
-                { v: "15+", l: "API Endpoints" },
-                { v: "~60", l: "Test Cases" },
-                { v: "2", l: "Projects" },
+                { v: "8+",  l: "Technologies" },
+                { v: "2",    l: "Projects Built" },
+                { v: "6mo+", l: "Training" },
               ].map(({ v, l }) => (
                 <div key={l}>
                   <div style={{ fontSize: 26, fontWeight: 800, color: ACCENT2, fontFamily: "'Fira Code', monospace" }}>{v}</div>
@@ -469,14 +388,16 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
+      {/* ABOUT SECTION — photo removed */}
       <section id="about" style={{ padding: "100px 40px", background: "#070710", position: "relative" }}>
         <div className="glow-blob" style={{ width: 400, height: 400, background: `${ACCENT}0c`, top: 0, left: -100 }} />
 
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
+
           <h2 className="section-title">About <span>Me</span></h2>
           <div className="accent-line" />
 
+          {/* Tab switcher */}
           <div style={{ display: "flex", gap: 10, marginBottom: 30, flexWrap: "wrap" }}>
             {["skills", "experience", "education"].map((t) => (
               <button key={t} className={`tab-btn ${activeTab === t ? "active" : ""}`} onClick={() => setActiveTab(t)}>
@@ -485,6 +406,7 @@ export default function Portfolio() {
             ))}
           </div>
 
+          {/* SKILLS TAB */}
           {activeTab === "skills" && (
             <div className="skills-grid" style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 12 }}>
               {SKILLS.map(({ label, bg, border, color, svg }) => (
@@ -494,10 +416,9 @@ export default function Portfolio() {
                 </div>
               ))}
             </div>
-
-
           )}
 
+          {/* EXPERIENCE TAB */}
           {activeTab === "experience" && (
             <div style={{ display: "flex", flexDirection: "column", gap: 28, maxWidth: 780 }}>
               {EXPERIENCE.map((item, i) => (
@@ -513,6 +434,7 @@ export default function Portfolio() {
             </div>
           )}
 
+          {/* EDUCATION TAB */}
           {activeTab === "education" && (
             <div style={{ display: "flex", flexDirection: "column", gap: 28, maxWidth: 780 }}>
               {EDUCATION.map((item, i) => (
@@ -530,6 +452,7 @@ export default function Portfolio() {
 
           <p style={{ color: "#64748b", fontSize: 14, lineHeight: 1.9, marginTop: 32, marginBottom: 10 }}>{ABOUT_DESC_1}</p>
           <p style={{ color: "#64748b", fontSize: 14, lineHeight: 1.9, marginBottom: 36 }}>{ABOUT_DESC_2}</p>
+
           <a href={MY_RESUME} download className="btn-primary">↓ Download Resume</a>
         </div>
       </section>
@@ -547,21 +470,19 @@ export default function Portfolio() {
           <div className="projects-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 32 }}>
             {PROJECTS.map((p, i) => (
               <div key={i} className="proj-card">
-                {p.img && (
-                  <div style={{ position: "relative", overflow: "hidden" }}>
-                    <img
-                      src={p.img}
-                      alt={p.title}
-                      className="proj-img"
-                      onError={(e) => {
-                        e.target.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='220'%3E%3Crect fill='%230a0a12' width='600' height='220'/%3E%3Ctext fill='%23333' font-size='13' font-family='monospace' x='50%25' y='45%25' text-anchor='middle' dominant-baseline='middle'%3EAdd screenshot: ${encodeURIComponent(p.img)}%3C/text%3E%3C/svg%3E`;
-                      }}
-                    />
-                    <div style={{ position: "absolute", top: 14, right: 14, background: "rgba(7,7,16,0.85)", border: `1px solid ${ACCENT}44`, borderRadius: 6, padding: "4px 10px", fontFamily: "'Fira Code', monospace", fontSize: 11, color: ACCENT2 }}>
-                      0{i + 1}
-                    </div>
+                <div style={{ position: "relative", overflow: "hidden" }}>
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    className="proj-img"
+                    onError={(e) => {
+                      e.target.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='220'%3E%3Crect fill='%230a0a12' width='600' height='220'/%3E%3Ctext fill='%23333' font-size='13' font-family='monospace' x='50%25' y='45%25' text-anchor='middle' dominant-baseline='middle'%3EAdd screenshot: ${encodeURIComponent(p.img)}%3C/text%3E%3C/svg%3E`;
+                    }}
+                  />
+                  <div style={{ position: "absolute", top: 14, right: 14, background: "rgba(7,7,16,0.85)", border: `1px solid ${ACCENT}44`, borderRadius: 6, padding: "4px 10px", fontFamily: "'Fira Code', monospace", fontSize: 11, color: ACCENT2 }}>
+                    0{i + 1}
                   </div>
-                )}
+                </div>
 
                 <div style={{ padding: "26px 26px 22px" }}>
                   <div style={{ display: "flex", gap: 8, marginBottom: 14, flexWrap: "wrap" }}>
@@ -581,29 +502,21 @@ export default function Portfolio() {
                     ))}
                   </div>
 
-                  {p.links && p.links.length > 0 && (
-                    <>
-                      <div style={{ height: 1, background: "#1a1a2e", marginBottom: 20 }} />
-                      <div style={{ display: "flex", flexWrap: "wrap", gap: 20 }}>
-                        {p.links.map((l) => (
-                          <a
-                            key={l.label}
-                            href={l.href}
-                            target="_blank"
-                            rel="noreferrer"
-                            style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "#64748b", fontSize: 13, fontWeight: 600, transition: "color 0.3s" }}
-                            onMouseEnter={(e) => (e.currentTarget.style.color = "#a78bfa")}
-                            onMouseLeave={(e) => (e.currentTarget.style.color = "#64748b")}
-                          >
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
-                            {l.label} →
-                          </a>
-                        ))}
-                      </div>
-                    </>
-                  )}
+                  <div style={{ height: 1, background: "#1a1a2e", marginBottom: 20 }} />
+
+                  <a
+                    href={p.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "#64748b", fontSize: 13, fontWeight: 600, transition: "color 0.3s" }}
+                    onMouseEnter={e => e.currentTarget.style.color = "#a78bfa"}
+                    onMouseLeave={e => e.currentTarget.style.color = "#64748b"}
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                      <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    View on GitHub →
+                  </a>
                 </div>
               </div>
             ))}
@@ -623,9 +536,9 @@ export default function Portfolio() {
           </p>
 
           <div className="contact-row" style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap", marginBottom: 48 }}>
-            <a href={GMAIL_COMPOSE} target="_blank" rel="noreferrer" className="contact-card" style={{ flex: 1, minWidth: 240, maxWidth: 300 }}>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="contact-card" style={{ flex: 1, minWidth: 240, maxWidth: 300 }}>
               <div style={{ width: 50, height: 50, background: `${ACCENT}18`, border: `1px solid ${ACCENT}33`, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ACCENT2} strokeWidth="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ACCENT2} strokeWidth="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div style={{ textAlign: "left" }}>
                 <p style={{ fontSize: 10, color: "#334155", fontFamily: "'Fira Code', monospace", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 5 }}>Email</p>
@@ -636,7 +549,7 @@ export default function Portfolio() {
 
             <a href={`tel:${CONTACT_PHONE.replace(/\s/g, "")}`} className="contact-card" style={{ flex: 1, minWidth: 240, maxWidth: 300 }}>
               <div style={{ width: 50, height: 50, background: `${ACCENT}18`, border: `1px solid ${ACCENT}33`, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ACCENT2} strokeWidth="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.31 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.1 6.1l1.27-.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 17.5v-.58z" /></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ACCENT2} strokeWidth="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.31 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.1 6.1l1.27-.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 17.5v-.58z"/></svg>
               </div>
               <div style={{ textAlign: "left" }}>
                 <p style={{ fontSize: 10, color: "#334155", fontFamily: "'Fira Code', monospace", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 5 }}>Phone</p>
@@ -680,5 +593,4 @@ export default function Portfolio() {
       </footer>
     </div>
   );
-
 }
